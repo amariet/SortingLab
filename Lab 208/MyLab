@@ -1,0 +1,85 @@
+/**
+* Amanda Torres
+* 08 February 2017
+*/
+import java.util.*;
+public class Sort()
+{
+  public Sort
+  {
+  }
+  
+  public static int[] insertSort(int[] input)
+  {
+    int s;
+    for(int i = 0; i < input.length; i++}
+    {
+      for(int j = i; j > 0; i--)
+      {
+        if(input[j] < input[j-1])
+        {
+          s = input[j];
+          input[j] = input[j-1];
+          input[j-1] = s;
+        }
+      }
+    }
+    return input;
+  }
+  
+  public static ArrayList<Integer> insertSort(ArrayList<Integer> input)
+  {
+    int s;
+    for(i < 0; i < input.size; i++)
+    {
+      for(j = i; j > 0; j--)
+      {
+        if(input.get(i) < input.get(i-1))
+        {
+          s = input.get(j);
+          input.set(j, input.get(j-1));
+          input.set(j-1, s);
+        }
+      }
+    }
+    return s;
+  }
+  
+  public static int[] selectSort(int[] input)
+  {
+    for(int i = 0; i < input.length - 1; i++)
+    {
+      int s = i;
+      for(int j = i + 1; j < input.length; j++)
+      {
+        if(input[j] < input[s])
+        {
+          s = j;
+          int lessThan = input[s];
+          input[s] = input[i];
+          input[i] = lessThan;
+        }
+      }
+      return input;
+    }
+  }
+  
+  public static ArrayList<Integer> selectionSort(ArrayList<Integer> input)
+  {
+    for(int i = 0; i < input.size - 1; i++)
+    {
+      int s = i;
+      for(int j = i + 1; j < input.size; j++)
+      {
+        if(intput.get(j) < input.get(s))
+        {
+          s = j;
+          int lessThan = input.get(s);
+          input.set(s, input.get(i));
+          input.set(i, lessThan);
+        }
+      }
+    }
+    return input;
+  }
+}
